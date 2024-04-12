@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
 //MongoDB Connection Start
-mongoose.connect("mongodb://127.0.0.1:27017/momenta").then(() => {
+mongoose.connect("mongodb+srv://asishabhishek99:momenta123@cluster0.wtoxxtc.mongodb.net/Momenta").then(() => {
     console.log("MongoDB connected")
 }).catch((e) => {
     console.log("MongoDB connection error!")
