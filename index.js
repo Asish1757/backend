@@ -31,7 +31,6 @@ app.post("/signup", async (req, res) => {
         confirmPassword: req.body.Cpassword
     }
     const checkuser = await User.findOne({ name: req.body.name })
-    // const checkuser = await User.findOne({ name: req.body.name })
     if (checkuser) {
         return res.send('<script>alert("User already exists!");  window.location.href="/signup";</script>');
     } else {
